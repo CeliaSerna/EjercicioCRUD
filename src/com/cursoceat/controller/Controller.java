@@ -25,7 +25,7 @@ public class Controller {
 
 	if (opcion ==1) {
 	System.out.println("Escriba el nombre");
-	String nombre= new Scanner(System.in).next();
+	String nombre= new Scanner(System.in).nextLine();
 	System.out.println("Escriba la edad");
 	int edad= entrada.nextInt();
 	
@@ -36,7 +36,7 @@ public class Controller {
 	
 	}else if (opcion == 2) {
 	System.out.println("Escriba el nombre del alumno que quiere eliminar");
-	String nombre= new Scanner(System.in).next();	
+	String nombre= new Scanner(System.in).nextLine();	
 	Iterator<Alumno> it = alumnos.iterator();
 		while(it.hasNext()) {
 			Alumno a = it.next();
@@ -48,10 +48,10 @@ public class Controller {
 	}else if (opcion == 3) {
 	
 	System.out.println("Escriba el nombre del alumno que quiere modificar");
-	String nombre= new Scanner(System.in).next();
+	String nombre= new Scanner(System.in).nextLine();
 	
 	System.out.println("Escriba el nuevo nombre del alumno");
-	String nombreNuevo= new Scanner(System.in).next();
+	String nombreNuevo= new Scanner(System.in).nextLine();
 	
 	System.out.println("Escriba la nueva edad del alumno");
 	int nuevaEdad = entrada.nextInt();
